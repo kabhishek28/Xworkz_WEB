@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div>
+        <form>
+            <div>
+                <label for="FirstName">First Name <span style="color: red;">*</span>:</label>
+                <input type="text" id="FirstName" required>
+            </div><br>
+            <div>
+                <label for="LastName">Last Name <span style="color: red;">*</span>:</label>
+                <input type="text" id="LastName" required>
+            </div><br>
+            <div>
+                <label for="email">Email <span style="color: red;">*</span>:</label>
+                <input type="email" id="email" required>
+            </div><br>
+            <div>
+                <label for="Phone">Phone Number <span style="color: red;">*</span>:</label>
+                <input type="tel" id="Phone" pattern="[0-9]{10}" required>
+            </div><br>
+            <div>
+                <label for="password">Password <span style="color: red;">*</span>:</label>
+                <input type="password" id="password" required>
+            </div><br>
+            <div>
+                <label for="Cpassword">Confirm Password <span style="color: red;">*</span>:</label>
+                <input type="password" id="Cpassword" required>
+            </div><br>
+            <div>
+                <label><input type="checkbox" id="vehicle1"> I have a bike</label><br>
+                <label><input type="checkbox" id="vehicle2"> I have a car</label><br>
+                <label><input type="checkbox" id="vehicle3"> I have a boat</label><br>
+                <label><input type="checkbox" id="vehicle4"> I have a train</label><br>
+            </div><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
