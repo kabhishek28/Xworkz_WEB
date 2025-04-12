@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Navigation</title>
+  <style>
+    ul {
+      list-style-type: none;
+      background-color: rgb(196, 147, 147);
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      height: 100vh;
+    }
+
+    ul li {
+      background-color: rgb(32, 120, 209);
+    }
+
+    body {
+      margin: 0;
+    }
+
+    li a {
+      display: block;
+      color: rgb(107, 61, 46);
+      text-decoration: none;
+      padding: 20px;
+    }
+
+    li:hover {
+      background-color: rgb(220, 220, 182);
+    }
+
+
+    .dropdwon-content{
+        position: absolute;
+        display: none;
+        background-color: red;
+        padding: 12px 16px;
+        color: black;
+    }
+    .dropdwon:hover .dropdwon-content{
+        display: ;
+    }
+  </style>
+</head>
+
+<body>
+
+  <ul>
+    <li><a href="https://www.google.com" target="_blank">Google</a></li>
+    <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></li>
+    <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+    <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+    <li>Home</li>
+    <li>About</li>
+   <li>HTML</li>
+   <li class="dropdown">JAVA<div class="dropdown-content">
+
+   </i>> fa-java    "></i></li>
+  </ul>
+
+</body>
+
+</html>

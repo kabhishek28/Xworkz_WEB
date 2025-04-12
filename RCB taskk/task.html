@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            background-color: lightblue;
+            color: cadetblue;
+        }
+
+        ul li {
+            display: inline-block;
+            background-color: aliceblue;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        li {
+            color: darkcyan;
+            padding: 20px;
+        }
+
+        li:hover {
+            background-color: lightcyan;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        .dropdown{
+            position: relative;
+        }
+        .dropdown-content{
+            position: absolute;
+            display: none;
+            background-color:lightcyan;
+            padding: 12px 16px;
+            color: cadetblue;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="https://www.x-workz.in/" target="_blank">HOME</a></li>
+        <li><a href="https://www.x-workz.in/about" target="_blank">ABOUT</a></li>
+        <li><a href="https://www.x-workz.in/reviews" target="_blank">REVIEWS</a></li>
+        <li class="java"><a href="https://www.x-workz.in/directions" target="_blank">DIRECTION</a>
+        </li>
+    <li>
+            <div class="dropdown">CONTACT US
+                <div class="dropdown-content">
+                    <div>Rajajinagar</div>
+                    <div>BTM</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>
