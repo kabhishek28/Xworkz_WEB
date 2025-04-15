@@ -1,0 +1,77 @@
+/* *{
+    margin: 2vh;
+    padding: 2vh;
+    border: 2h;
+} */
+.navClass {
+    background-color: cadetblue;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navClass ul {
+    overflow: auto;
+}
+
+.navClass ul li {
+    list-style: none;
+    float: left;
+    padding: 2vh;
+
+
+
+}
+
+.navClass ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    border: 5vh;
+    color: black;
+
+
+
+}
+
+.navClass ul li a:hover {
+    background-color: rgb(25, 104, 107);
+    color: white;
+    border: 10vh;
+    border-radius: 2vh;
+
+}
+
+.navClass div {
+    overflow: auto;
+}
+
+#searchID {
+    display: flex;
+}
+
+input {
+    margin-right: 10px;
+    width: 50vh;
+}
+
+
+
+
+/* #serachID {
+    
+    margin-light: 10px;
+} */
+
+
+
+/* .contact{
+    padding-left: 140vh;
+}
+.contact:hover{
+   
+    background-color: rgb(25, 104, 107);
+    color: white;
+    border: 10vh;
+    border-radius: 2vh;
+} */
