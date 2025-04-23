@@ -1,0 +1,157 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav ul{
+    overflow: auto;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.nav ul li{
+    list-style: none;
+    float:inline-start;
+    padding: 10px;
+}
+.searchBar{
+    border: 1px solid black;
+    width: 450px;
+    height: 40px;
+    border-radius: 30px;
+    
+}
+#logo1{
+    padding-left: 10px;
+}
+#logo2{
+    padding-top: 10px;
+    justify-content: center;
+}
+#logo3{
+    justify-content: center;
+    padding-left: 5px;
+    
+}
+#logo4{
+    padding-left: 5px;
+    padding-top: 10px;
+    justify-content: center;
+}
+input {
+    justify-content: center;
+    padding-left: 50px;
+    width: 50px;
+}
+.ulnav{
+    display: flex;
+    float: inline-start;
+}
+.div1{
+    display: flex;
+    align-items:  center;
+
+}
+.div2{
+    padding-left: 300px;
+    display: flex;
+    justify-content: center;
+}
+.div3{
+    padding-left: 370px;
+    display: flex;
+    justify-content: center;
+}
+.videoBody{
+    display: flex;
+    margin: auto;
+    
+}
+
+.videoBody1{
+    /* border: 1px solid rgb(23, 23, 16); */
+    margin-left: 60px;
+    margin-right:20px;
+    justify-content: center;
+    
+}
+.videoBody2{
+    /* border: 1px solid black; */
+   
+    margin-right:30px;
+    /* display: flex;    */
+}
+.videoList{
+display: flex;
+padding: 10px;
+padding-left: 5px;
+}
+.videoList p{
+    padding: 10px;
+    margin-right: 10px;
+}
+#dots3{
+    padding-top: 10px;
+    justify-items: flex-end;
+}
+.text{
+    color: rgb(102, 195, 199);
+}
+
+
+.video-views,
+  .video-likes {
+    font-size: 14px;
+    color: gray;
+    
+}
+
+
+.yt-spec-icon-shape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.buttonGroup {
+    display: flex;
+    gap: 10px; 
+}
+
+.filterButton {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filterButton:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.filterButton:focus {
+    outline: none;
+}
+
+.filterButton:active {
+    background-color: #555;
+}
+
+.desc{
+    border: 1px solid black;
+    
+}
