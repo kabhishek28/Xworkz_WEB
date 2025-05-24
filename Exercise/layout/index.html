@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        :root{
+            --primary-color:rgb(111, 53, 53);
+            --primary2-color:rgb(215, 189, 189);
+            --secondary-color:rgb(232, 216, 187);
+            --text-color:white;
+        }
+        body{
+            background-color: var(--secondary-color);
+        }
+        header{
+            position: sticky;
+            top:0;
+        }
+       
+        nav{            
+            left:0;
+            width: 100%;
+            background-color: var(--primary-color);
+            padding: 30px;
+            z-index: 1000;
+            
+        }
+        ul li{
+            display: inline;
+            padding: 10px;
+            margin: 5px;
+            
+        }
+        ul li a{
+            text-decoration: none;
+            color: var(--text-color);
+            font-family: "Share Tech", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        
+        }
+        ul li a:hover{
+            text-decoration: none;
+            color: var(--primary-color);
+            background-color: var(--primary2-color);
+            /* padding: 15px; */
+            border: 1px solid var(--text-color);
+            /* box-sizing: content-box; */
+            border-radius: 5px;
+            font-family: "Share Tech", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        main {
+            margin-top: 100px; /* Adjust to match nav height + padding */
+        }
+
+        .mainBox{
+            border: 1px solid black;
+            height: 600px;
+            width: 1519px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:400px;
+            background-color:blanchedalmond;
+        }
+        .box{
+            border: 2px solid black;
+            height: 300px;
+            width: 400px;
+            padding: 20px;
+            background-color: rgb(192, 101, 101);
+        }
+
+        footer{
+            border: 2px solid rgb(121, 121, 113);
+            height: 200px;
+            width: 1400px;
+            margin-top: 300px;
+            margin-bottom: 100px;
+            margin-left: 50px;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        footer p{
+            font-size: 50px;
+        }
+
+        img{
+            position: fixed; 
+            bottom: 30px;
+            right: 20px;
+            height: auto;
+            /* left: 100%; */
+            border-radius: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="mainBox">
+            
+            <div class="box">
+
+            </div>
+            <div class="box">
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    <p>WELL COME TO CSS LAYUOT</p>
+    </footer>
+
+    <img src="image.png" width="80px" height="80px">
+</body>
+</html>
