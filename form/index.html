@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhi</title>
+    <title>Form2</title>
 </head>
+<style>
+    .redcolor {
+        color: red;
+    }
+</style>
+
 <body>
-    <a href="home.html" target="_blank"> go to home</a>
+    <form>
+        <div>
+            <label for="nameID">Name</label>
+            <span class="redcolor">*</span>
+            <span>:</span>
+            <input type="text" id="nameID" name="nameName" required>
+        </div>
+        <div>
+            <label for="ageID">Age</label>
+            <span class="redcolor">*</span>
+            <span>:</span>
+            <input type="number" id="ageID" name="ageAge" required>
+        </div>
+    </form>
+    <button>Submit</button>
+    <button>Clear</button>
 </body>
+
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="form.js"></script>
+    <style>
+        .mandatory {
+            color: red;
+        }
+
+        .btnClr {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="formName" onsubmit="return validate()" onreset="return cleare()">
+        <div>
+            <label for="nameId">Name</label>
+            <span class="mandatory">*</span>
+            <span>:</span>
+            <input type="text" id="nameId" name="firstName" required>
+            <span id="nameerrorID"></span>
+        </div>
+        <br>
+
+         <!-- <div> 
+            <label for="mailId">EmailId</label>
+            <span class="mandatory">*</span>
+            <span>:</span>
+            <input type="email" id="mailId" name="firstMail" required>
+        </div>
+        <br>-->
+
+        <div>
+            <label for="PasswordId">Password</label>
+            <span class="mandatory">*</span>
+            <span>:</span>
+            <input type="password" id="PasswordId" name="firstPassword" required>
+           
+        </div>
+        <br>
+        <div>
+            <label for="ConfirmPasswordId">Confirm Password</label>
+            <span class="mandatory">*</span>
+            <span>:</span>
+            <input type="password" id="ConfirmPasswordId" name="firstConfirmPassword" required> 
+            <span id="errorpasswordID"></span>
+        </div> 
+        <br>
+<!---
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="maleId" name="gender">
+            <label for="maleId">Male</label>
+            <input type="radio" id="femaleId" name="gender">
+            <label for="femaleId">Female</label>
+        </div>
+        <br>
+
+        <div>
+            <label>Lang Known:</label>
+            <input type="checkbox" id="javaId">
+            <label for="javaId">Java</label>
+            <input type="checkbox" id="htmlId">
+            <label for="htmlId">HTML</label>
+            <input type="checkbox" id="cssId">
+            <label for="cssId">CSS</label>
+            <input type="checkbox" id="mysqlId">
+            <label for="mysqlId">MySQL</label>
+        </div>-->
+
+         <br> 
+        <div>
+            <button class="btnClr" type="Submit">Submit</button>
+            <button class="btnClr" type="reset">Clear</button>
+        </div> 
+    </form>
+</body>
+
+</html>
