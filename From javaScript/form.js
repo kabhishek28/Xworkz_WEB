@@ -7,35 +7,54 @@ function validate() {
     let confirm = document.formName.firstConfirmPassword.value;
 
     if (names.length > 10) {
-        val = false;
-        alert('not submitted');
+       
         seterror('nameerrorID', 'name is less than 20');
-    }else{
-         setclear('nameerrorID', '');
+         val = false;
+    } else {
+        setclear('nameerrorID', '');
     }
-    
-    
-   
+
 
     if (passwords.length < 10) {
         val = false;
-        alert('password');
     }
 
     if (passwords != confirm) {
-        val = false; 
-         alert('not confirm');
-        setpassword('errorpasswordID','password not matching')
-      
-    }else{
+       
+        seterror('ConfirmPasswordId', 'password not matching')
+         val = false;
+
+    } else {
         setclear('errorpasswordID', '');
     }
 
 
+    const gender = document.querySelector('input[name="gender"]:checked').value;
+   console.log( gender);
+    if (!gender) { 
+        
+        alert('please select gender')
+        val = false;
+        seterror('gendererror', 'select gender')
 
+    } else {
+        setclear('genderror', '');
+    }
+
+    const num = document.querySelector('input[name="num"]:checked');
+    const num1 = Arrray.from(num).map(e => e.value)
+    console.log('num1', num1);
+    alert('stop here')
     return val;
-}
 
+
+
+
+
+
+return val;
+
+}
 // function cleare(){
 //     if (names.length > 10) {
 //         val = true;
@@ -47,9 +66,9 @@ function validate() {
 //         val = false; 
 //          alert(' confirm');
 //         setclear('errorpasswordID', '');
-      
+
 //     }
-    
+
 
 // }
 
@@ -57,7 +76,7 @@ function seterror(id, message) {
 
     document.getElementById(id).innerText = message;
 }
-function setclear(id){
+function setclear(id) {
     document.getElementById(id).innerText = ' ';
 }
 
