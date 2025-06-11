@@ -1,0 +1,14 @@
+.red{
+    background-color: red;
+
+}
+.bg-yellow{
+    color: yellow;
+}
+#id1{
+    background-color:rgb(206, 145, 115);
+}
+#id2{
+    background-color: rgb(62, 119, 119);
+    color: rgb(198, 190, 181);
+}
