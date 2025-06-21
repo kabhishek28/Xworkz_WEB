@@ -1,0 +1,199 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* class selector */
+        .div1 {
+            color: white;
+            background-color: rgb(254, 169, 12);
+        }
+
+        /* ID selector */
+        #id1 {
+            color: white;
+            background-color: green;
+
+        }
+
+        /* Chlid Selector */
+        div>p {
+            color: blue;
+            background-color: rgb(206, 189, 189);
+        }
+
+        /* descendant selector */
+        div p{
+            color: red;
+            background-color: yellow;
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo selectro */
+
+        a:visited{
+            color: black;
+        }
+        a:link{
+            color: pink;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: blue;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit laborum possimus suscipit, nesciunt explicabo
+            modi.</p>
+    </div>
+
+    <div id="id1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing.
+        <article>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In veniam quos ea quis neque, exercitationem
+                odit
+                itaque tempora quaerat aspernatur!</p>
+        </article>
+
+    </div>
+
+    <a href="https://www.google.com">go to google</a>
+    <a href="https://www.facebook.com">go to Facebook</a>
+
+
+
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Position Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .box {
+      padding: 15px;
+      color: white;
+      margin-top: 10px;
+    }
+
+    .static-box {
+      position: static;
+      background-color: gray;
+    }
+
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 20px;
+      background-color: steelblue;
+    }
+
+    .parent {
+      position: relative;
+      width: 300px;
+      height: 150px;
+      background-color: #f0f0f0;
+      margin-top: 20px;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: crimson;
+      padding: 10px;
+    }
+
+    .fixed-box {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: green;
+      padding: 10px;
+    }
+
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      background-color: orange;
+      padding: 10px;
+      z-index: 10;
+    }
+
+    .spacer {
+      height: 1000px;
+      background: linear-gradient(#fff, #ccc);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Position Property Examples</h1>
+
+  <!-- Static -->
+  <div class="section">
+    <h2>1. Static (default)</h2>
+    <div class="box static-box">This is static positioned (default).</div>
+  </div>
+
+  <!-- Relative -->
+  <div class="section">
+    <h2>2. Relative</h2>
+    <div class="box relative-box">This is relatively positioned (moved 20px down and right).</div>
+  </div>
+
+  <!-- Absolute -->
+  <div class="section">
+    <h2>3. Absolute</h2>
+    <div class="parent">
+      <div class="absolute-box">This is absolutely positioned (inside relative parent).</div>
+    </div>
+  </div>
+
+  <!-- Fixed -->
+  <div class="section">
+    <h2>4. Fixed</h2>
+    <p>Scroll down to see the fixed element stay in place.</p>
+    <div class="fixed-box">I stay at bottom right!</div>
+  </div>
+
+  <!-- Sticky -->
+  <div class="section">
+    <h2 class="sticky-header">5. Sticky Header</h2>
+    <p>Scroll down — this header sticks to the top when it reaches it.</p>
+    <div class="spacer"></div>
+  </div>
+
+</body>
+</html>
