@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:linear-gradient(to right,
+            rgb(225, 129, 73)10%,
+            rgb(97, 137, 184)20%,
+            rgb(47, 168, 154)30%,
+            rgb(204,176,110)100%);
+        }
+        .box1{
+            background: blueviolet;
+            margin: 0px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: 10px;
+            border-color: rgb(25, 10, 39);
+            border-radius: 50px ;
+        }
+        h1{
+            padding-left:  300px;
+        }
+        h2{
+            padding-left: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1 class="h1">BOX1</h1>
+        <h1 class="h2">BOX2</h1>
+    </div>
+</body>
+</html>
