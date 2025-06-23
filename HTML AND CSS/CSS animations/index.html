@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+</head>
+<style>
+    .container {
+        background-color: bisque;
+        width: 100vh;
+        height: 100vh;
+    }
+
+    .box {
+        width: 34vh;
+        height: 30vh;
+        /* background-color: aqua;
+        animation: AbhiKaAnimation ;
+        animation-duration:3s ;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0,0,0,0.96);
+        animation-delay: 1s;
+        animation-direction: alternate-reverse;
+        animation-play-state: paused; */
+
+        animation: AbhiKaAnimation 4s ease-in-out 3s 1, harry2 4s ease-in-out 3s 1;
+    }
+
+    @keyframes AbhiKaAnimation {
+        from{
+            background-color: red;
+            
+        }to{
+            background-color: yellow;
+            transform: translateX(100px);
+        }
+    }
+
+    @keyframes harry2{
+        0%{
+            transform: rotate(100deg);
+        }
+        20%{
+            transform: rotate(200deg);
+        }
+        50%{
+            transform: rotate(220deg);
+        }
+        100%{
+            transform: rotate(310deg);
+        }
+    }
+</style>
+
+<body>
+    <div class="cantainer">
+        <div class="box">
+            BOX
+        </div>
+    </div>
+
+</body>
+
+</html>
