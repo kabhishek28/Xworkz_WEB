@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-2</title>
+</head>
+<style>
+    *{
+        margin: 2px;padding: 0;
+    }
+    .container{
+        background-color: rgb(122, 137, 151);
+        padding: 5px;
+        border: 2px solid rgb(0, 0, 0);
+        display: grid;
+        grid-template-areas:"nav nav nav "
+                            "main side article"
+                            "footer footer footer";
+                            gap:5px;
+    }
+    .item{
+        border: 2px solid red;
+        border-style:dotted ;
+        height: 40px;
+    }
+
+    .item-1{
+        grid-area: nav;
+        background-color: aqua;
+    }
+    .item-2{
+        grid-area: main;
+        background-color: aquamarine;
+    }
+    .item-3{
+        grid-area: side;
+        background-color: aquamarine;
+    }
+    .item-4{
+        grid-area: article;
+        background-color: aquamarine;
+    }
+    .item-5{
+        grid-area: footer;
+        background-color: aqua;
+    }
+    .dis{
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item item-1 dis"><h1>Nav bar</h1></div>
+        <div class="item item-5 dis"><h1> Footer</h1></div>
+        <div class="item item-4 dis"><h3>Article</h3></div>
+        <div class="item item-3 dis"><h3>Side</h3></div>
+        <div class="item item-2 dis"><h3>Main</h3></div>
+    </div>
+
+</body>
+</html>
