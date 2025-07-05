@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+<style>
+    .container {
+        border: 2px solid red;
+        display: flex;
+        height: 100vh;
+        /* justify-content:center; */
+        align-items:center; /*only when one line */
+        /* flex-direction:row; */
+        /* flex-wrap:wrap ; */
+        align-content:flex-start; 
+        /* multiple line when we get multiple line when we warp */ 
+        /* there is no justify-items: in flexbox */
+        flex-flow: row wrap;
+        /* gap :10px; */
+        /* row-gap: 10px; */
+        /* column-gap: 10px; */
+        gap: 3px 40px;
+    }
+
+    .item {
+        height: 62px;
+        width: 62px;
+        border: 2px solid black;
+        /* margin: 4px; */
+        /* padding: 10px; */
+        background-color: blueviolet;
+    }
+
+    .order-1{
+        order:1;
+    }
+
+    .order-2{
+        order:2;
+    }
+
+    .order-3{
+        order:3;
+    }
+
+</style>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-3" >4</div>
+            <div class="item order-1">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+             <div class="item">9</div>
+            <div class="item order-2">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item">15</div>
+            <div class="item">16</div>
+             <div class="item">17</div>
+            <div class="item">18</div>
+            <div class="item">19</div>
+            <div class="item">20</div>
+            <div class="item">21</div>
+            <div class="item">22</div>
+            <div class="item">23</div>
+            <div class="item">24</div>
+             <div class="item">25</div>
+            <div class="item">26</div>
+            <div class="item">27</div>
+            <div class="item">28</div>
+            <div class="item">29</div>
+            <div class="item">30</div>
+            <div class="item">31</div>
+            <div class="item">32</div>
+        </div>
+    </main>
+</body>
+
+</html>
