@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+</head>
+<style>
+    /* .box:first-child {
+        background-color:rgb(144, 188, 226);
+    } */
+
+    /* .box::first-line {
+        color: yellow;
+    } */
+
+   /* .Boxes *{
+        color: blue;
+        border: 2px solid black;
+     } */
+     /* [data-color="primary"]{
+        padding-top:45px ;
+     } */ 
+
+
+     /* .box:nth-child(odd){
+        background-color:blue;
+     } */
+
+     /* .box:nth-last-child(2){
+        background-color: red;
+     } */
+
+     .Boxes::before{
+        content: "ABHI IS GOOD";
+     }
+     .Boxes::after{
+        content: "HTML AND CSS IS GOOD";
+     }
+     ::selection{
+        color: rgb(116, 255, 255);
+     }
+
+     .box::first-letter{
+        color: peru;
+        font-size:45px;
+     }
+     input::placeholder{
+        color: blue;
+     }
+</style>
+
+<body>
+    <div class="Boxes">
+        <!-- <div class="box">BOX Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore possimus eius quia,
+            esse, laboriosam odit reiciendis ad eum facere tenetur quis nulla expedita quidem maiores! Placeat dolor
+            magnam perferendis asperiores sunt culpa pariatur nemo ut veritatis aspernatur, eos sint beatae vel natus
+            quas illum error suscipit nulla eius commodi explicabo at ad veniam! Dicta soluta quam quo sunt adipisci
+            quia eligendi fugit necessitatibus tempore, at pariatur in vero dolor non animi est explicabo quibusdam
+            ducimus ea perferendis consectetur maiores deserunt qui doloribus. Ad eaque molestiae fuga, maiores, eius
+            vero iste enim voluptas nihil harum error itaque facilis recusandae molestias, corrupti officiis. Ex
+            similique eos reprehenderit nostrum totam. Possimus sequi vitae in molestiae ex officiis deleniti ut
+            recusandae, magni assumenda non perferendis aperiam explicabo odit! Eligendi ipsa voluptatum, culpa pariatur
+            incidunt ab atque deserunt quae voluptates accusantium laboriosam assumenda laudantium dolor non
+            necessitatibus modi nemo repellat fuga sequi perferendis? Enim, dignissimos.
+        </div> -->
+        <div data-color="primary" class="box">BOX</div>
+        <div  class="box">BOX</div>
+        <div class="box">BOX</div>
+        <input type="text" placeholder="Type your here">
+    </div>
+</body>
+
+</html>
