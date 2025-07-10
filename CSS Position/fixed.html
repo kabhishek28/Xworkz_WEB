@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        border: 1px solid black;
+        width: 100px;
+        height: 423px;
+        padding: 20px;
+        margin: 10px;
+        
+
+    }
+
+    .box1 {
+        background-color: antiquewhite;
+        position: sticky;
+        top: 0px;
+        height: 10px;
+        width: 300px;
+    }
+
+    .box2 {
+        background-color: rgb(179, 141, 91);
+
+    }
+
+    .box3 {
+        background-color: rgb(196, 186, 174);
+    }
+
+    .box4 {
+        background-color: antiquewhite;
+    }
+    .parent{
+        border: 2px solid purple;
+        height: 300px;
+        width: 300px;
+        overflow: scroll;
+        margin: 50px;
+
+    }
+</style>
+
+<body>
+    <h1>Fixed</h1>
+    <div class="parent">
+        <div class=" box box1"></div>
+        <div class="box box2"></div>
+
+        <div class="box box3"></div>
+
+        <div class="box box4"></div>
+    </div>
+
+
+    <h1>next page<span><a href="index.html">home page</a></span></h1>
+</body>
+
+</html>
