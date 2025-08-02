@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaecificity</title>
+</head>
+<style>
+    h1{
+        color: aqua;
+    }
+    .yellow{
+        color: yellow;
+
+    }
+    .cred{
+        color: red;
+    }
+    .purple{
+        color: purple;
+    }
+    #id1{
+        color: rgb(186, 186, 38);
+    }
+    /* attribute selector */
+    [data-x=a]{
+        background-color: chocolate;
+    }
+
+    /* inline> ID selector > class selector >element selector >universal selector */
+</style>
+<body>
+    <div>
+        <h1 class="yellow cred purple">Hi i am index file</h1>
+        <h1 style="color: brown;" class="yellow cred purple">Hi i am index file</h1>
+        <h1 id="id1"  class="yellow cred purple">Hi i am index file</h1>
+        <h1 class="yellow cred purple" data-x="a" >Hi i am index file</h1>
+    </div>
+    
+</body>
+</html>
